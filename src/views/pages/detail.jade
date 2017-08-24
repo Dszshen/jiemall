@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title 卡卡
+    script(src='/libs/jquery/dist/jquery.min.js' type="text/javascript")
+    link(rel='stylesheet', href='/libs/normalize.css/normalize.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
+
+    link(rel='stylesheet', href='/assets/style/main.css')
+    link(rel='stylesheet', href='/assets/style/detail.css')
+  body
+    .app.app-detail
+      include template/navigater
+      .container.app-container
+        .row
+          .col-lg-12.col-md-12.col-sm-12
+            #carousel-id.carousel.slide(data-ride='carousel')
+              ol.carousel-indicators
+                li(data-target='#carousel-id', data-slide-to='0')
+                li(data-target='#carousel-id', data-slide-to='1')
+                li.active(data-target='#carousel-id', data-slide-to='2')
+              .carousel-inner
+                .item
+                  img(data-src='holder.js/900x500/auto/#777:#7a7a7a/text:First slide', alt='First slide', src='/assets/images/zhanlang02.jpg')
+                  .container
+                    .carousel-caption
+                      h2 标题1
+                      p 描述1
+                      //p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+                .item
+                  img(data-src='holder.js/900x500/auto/#666:#6a6a6a/text:Second slide', alt='Second slide', src='/assets/images/zhanlang03.jpg')
+                  .container
+                    .carousel-caption
+                      h2 标题2
+                      p 描述2
+                      //p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+                .item.active
+                  img(data-src='holder.js/900x500/auto/#555:#5a5a5a/text:Third slide', alt='Third slide', src='/assets/images/zhanlang04.jpg')
+                  .container
+                    .carousel-caption
+                      h2 标题3
+                      p 描述3
+                      //p
+                        a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+              a.left.carousel-control(href='#carousel-id', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+              a.right.carousel-control(href='#carousel-id', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+        .row
+          .col-md-12.col-sm-12
+            h3.page-header 注册卡详情
+            //.panel.panel-default
+              .panel-body
+                | 详情
+            p 描述
+            p 描述
+            p 描述
+      include template/footer
+      //.app-footer
+        p.bottom-line.text-center —————— 底线 ——————
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js' type="text/javascript")
+    script.
+      $('.carousel').carousel();

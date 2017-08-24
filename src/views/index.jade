@@ -1,0 +1,119 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title 卡卡
+    script(src='/libs/jquery/dist/jquery.min.js' type="text/javascript")
+    link(rel='stylesheet', href='/libs/normalize.css/normalize.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
+
+    link(rel='stylesheet', href='/assets/style/main.css')
+    link(rel='stylesheet', href='/assets/style/index.css')
+    link(rel='stylesheet', href='/assets/style/imgitem.css')
+  body
+    .app
+      include pages/template/navigater
+      .container.app-index.img-list-item.app-container
+        .row
+          .col-lg-12.col-md-12
+            .jumbotron
+              h2 Hello,world!
+              p ...
+              p
+                a.btn.btn-primary.btn-lg(href='#', role='button') 更多...
+        .row
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 移动
+                span.post
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/2.jpg')
+              .box-content
+                h3.title 联通
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/3.jpg')
+              .box-content
+                h3.title 电信
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 流量卡
+                span.post
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/2.jpg')
+              .box-content
+                h3.title 影视会员
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/3.jpg')
+              .box-content
+                h3.title 注册卡
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 小商品
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+      include pages/template/footer
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js' type="text/javascript")
